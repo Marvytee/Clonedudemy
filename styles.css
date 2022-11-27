@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    font-family: serif;
+    padding: 0.2% 1%;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 1vw;
+}
+nav > img {
+    margin-top: 0.4%;
+}
+nav > p > a  {
+    text-decoration: none;
+    color: black;
+}
+nav > p > a:hover {
+    color: purple;
+}
+nav > div {
+    position: relative;
+}
+nav > div > i {
+    position: absolute;
+    top: 37%;
+    left: 2.4%;
+    color: grey;
+}
+nav > div > input {
+    width: 40vw;
+    padding: 3% 3% 3% 8%;
+    border-radius: 25px;
+    border: 0.1px solid grey;
+    outline: none;
+    background-color: rgb(247, 247, 247);
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display:none;
+}
+.fa-cart-shopping {
+    margin-top: 1.3%;
+    font-size: 3.5vh;
+}
+.fa-cart-shopping:hover {
+    color: rgb(110, 10, 204);
+}
+.first-btn, .third-btn, .second-btn {
+    background-color: white;
+    margin: 0.3% 0;
+    padding: 0.5% 1.5%;
+    border: 1px solid black;
+}
+.first-btn > a, .second-btn > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+.second-btn {
+    background-color: rgb(37, 36, 36);
+    padding: 0.5% 1.3%;
+}
+.second-btn:hover {
+    background-color: black;
+}
+.second-btn > a {
+    color: white;
+}
+.third-btn {
+    padding: 0.8%;
+}
+.third-btn > i {
+    font-size: 1.4vw;
+}
+/* first section style */
+#first-section {
+    width: 100%;
+    height: 65vh;
+    background: url("./images/second.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#first-section > div {
+    background-color: white;
+    width: 30%;
+    padding: 1% 1.5%;
+    z-index: 1;
+    position: relative;
+    top: 16%;
+    left: 5%;
+}
+#first-section > div > h1 {
+    margin-top: -1%;
+    font-size: 2.6vw;
+}
+#first-section > div > p {
+    font-size: 1.6vw;
+    margin-top: -5%;
+}
+#second-section {
+   margin: 9vh 2vw; 
+}
+.second-section-first-div > h1{
+    font-size: 2.7vw;
+}
+.second-section-first-div > p {
+    font-family: sans-serif;
+    font-size: 1.4vw;
+    margin-top: -3vh;
+}
+.second-section-second-div > a {
+    text-decoration: none;
+    color: rgb(131, 128, 128);
+    margin-right: 2.1vw;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.second-section-second-div > a:first-of-type {
+    color: black;
+}
+.second-section-second-div > a:hover {
+    color: black;
+}
+.second-section-third-div {
+    border: 1px solid rgb(180, 170, 170);
+    margin-top: 3vh;
+    padding: 2vh 2vw 7vh;
+}
+.second-section-third-div > h1 {
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.second-section-third-div > p {
+    font-family: sans-serif;
+    width: 68%;
+    line-height: 1.5;
+    color: rgb(66, 65, 65);
+    font-size: 1.2vw;
+}
+.second-section-third-div > button {
+    background-color: white;
+    padding: 0.8vw;
+    border: 1px solid black;
+    font-size: 1vw;
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
+.second-section-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 1%;
+}
+.second-section-grid-container > div > img {
+    border: 1px solid rgb(211, 204, 204);
+}
+.second-section-grid-container > div > h4 {
+    font-family: sans-serif;
+    font-size: 1.1vw;
+    font-weight: 700;
+    margin-top: -0.0001%;
+}
+.tutor-name {
+    font-family: sans-serif;
+    margin-top: -2.5vh;
+    font-size: 1.05vw;
+    color: rgb(141, 140, 140);
+}
+.ratings {
+    color: rgb(223, 151, 18);
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-top: -2vh;
+}
+.fa-star {
+    font-size: 0.8vw;
+    margin: 0 -0.1vw;
+}
+.fa-star-half-stroke {
+    font-size: 0.8vw;
+    margin: 0 -0.1vw;
+}
+.ratings-text {
+    font-size: 0.9vw;
+    color: rgb(141, 140, 140);
+    font-weight: 300;
+}
+.last-ratings-text {
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 1.1vw;
+    margin-top: -1.5vh;
+}
+.last-ratings-text > span {
+    text-decoration: line-through;
+    color: rgb(141, 140, 140);
+    font-weight: 200;
+    margin-left: 0.4vw;
+}
+.bestseller {
+    background-color: rgb(240, 223, 155);
+    width: 30%;
+    text-align: center;
+    padding: 0.4vh 0;
+    color: rgb(20, 65, 20);
+    margin-top: -1vh;
+    font-weight: 600;
+}
+#third-section {
+    margin: 2vh 2vw 10vh;
+}
+#third-section > h2 {
+    font-family: sans-serif;
+}
+.third-section-first-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.third-section-first-div > div > h4 {
+    font-family: sans-serif;
+    font-size: 1.1vw;
+}
+#fourth-section {
+    background-color:  rgb(241, 244, 247);
+    padding: 10vh 2vw;
+    font-family: sans-serif;
+}
+.fourth-section-first-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.fourth-section-first-div > div > h4 {
+    font-size: 1.3vw;
+}
+.fourth-section-first-div > div > a {
+    font-weight: 700;
+    color: rgb(110, 10, 204);
+}
+.fourth-section-first-div > div > a:hover {
+    color: rgb(95, 16, 168);
+}
+.fourth-section-first-div > div > p {
+    font-size: 1vw;
+    margin-bottom: 2.5vw;
+    color: rgb(141, 140, 140);
+}
+.fourth-section-second-div > button {
+    background-color: rgb(241, 244, 247);
+    padding: 1vw 0.7vw;
+    border: 1px solid black;
+    font-weight: 800;
+}
+.fifth-section-first-div, .fifth-section-fourth-div{
+    width: 70%;
+    margin: 0 auto;
+    padding: 4vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fifth-section-first-div > div {
+    margin: 0 3vw;
+}
+.fifth-section-first-div > div > h1  {
+    font-size: 2.5vw;
+}
+.fifth-section-first-div > div > p {
+    font-family: sans-serif;
+    font-size: 1.4vw;
+    line-height: 1.5;
+}
+.fifth-section-first-div > div > button, .fifth-section-third-div > div > button, .fifth-section-fourth-div > div > button  {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 1vw;
+    font-weight: 800;
+}
+
+.text {
+    padding-top: 5vw;
+}
+.fifth-section-second-div {
+    background-color: rgb(241, 244, 247);
+    padding: 2vw 1vw;
+}
+.fifth-section-second-div > h2 {
+    text-align: center;
+    font-size: 2vw;
+}
+.fifth-section-second-div > p {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: -2vh;
+}
+.fifth-section-second-div > div {
+    display: flex;
+    justify-content: space-around;
+}
+.fifth-section-third-div {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2vw;
+}
+.fifth-section-third-div > div {
+    margin: 0 2vw;
+}
+.fifth-section-third-div > div > p > span {
+    font-size: 2.5vw;
+    color: blueviolet;
+}
+.fifth-section-third-div > div > p > img {
+    margin-bottom: -0.4vw;
+}
+.fifth-section-third-div > div > p:nth-of-type(2) {
+    font-family: sans-serif;
+    font-size: 1.5vw;
+}
+.fifth-section-fourth-div > div {
+    margin:  0 2vw;
+}
+.fifth-section-fourth-div > div > h2 {
+    font-size: 3vw;
+}
+.fifth-section-fourth-div > div > p {
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    margin-top: -1vw;
+}
+#footer-section {
+    background-color: rgb(37, 35, 35);
+    padding: 2vw 3vw;
+    font-family: sans-serif;
+    color: white;
+}
+#footer-section > div {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section-first-div > div {
+    display: flex;
+    flex-direction: column;
+}
+.footer-section-first-div > div > a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+}
+.footer-section-first-div > div > a:hover {
+    text-decoration: underline;
+}
+.footer-section-first-div > div > button {
+    background-color: rgb(29, 27, 27);
+    color: white;
+    border: 1px solid white;
+    padding: 1vw 2.5vw;
+    font-size: 1.1vw;
+}
+.footer-section-second-div {
+    padding: 3vw 0 1vw;
+}
+.first-btn:hover {
+    background-color: rgb(221, 221, 221);
+}
+.third-btn:hover {
+    background-color: rgb(221, 221, 221);
+}
+.second-section-third-div > button:hover {
+    background-color: rgb(221, 221, 221);
+}
+.fourth-section-second-div > button:hover {
+    background-color: rgb(221, 221, 221);
+}
+.fifth-section-first-div > div > button:hover, .fifth-section-third-div > div > button:hover, .fifth-section-fourth-div > div > button:hover, .footer-section-first-div > div > button:hover {
+    background-color: black;
+}
